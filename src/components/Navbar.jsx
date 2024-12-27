@@ -37,9 +37,11 @@ function Navbar() {
             </button>
           </li>
           {pages.map((page) => (
-            <li className="p-8 w-full text-center hover:bg-gray-800">
+            <li
+              className="p-8 w-full text-center hover:bg-gray-800"
+              onClick={toggleIsOpen}>
               <a
-                href={page}
+                href={`#${page}`}
                 className="text-2xl">
                 {page}
               </a>
