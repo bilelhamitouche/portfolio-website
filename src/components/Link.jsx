@@ -3,7 +3,7 @@ function Link({ children, href, variant, size, className }) {
 
   const variantStyles = {
     button: "bg-blue-500 rounded-md text-white hover:bg-blue-600",
-    link: "text-gray-200 hover:bg-gray-800 rounded-sm transition-colors",
+    link: "text-gray-200 hover:bg-gray-800 rounded-sm transition-colors capitalize",
     outlined: "border border-blue-500 text-blue-500 hover:bg-blue-100",
   };
 

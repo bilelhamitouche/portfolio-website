@@ -42,7 +42,7 @@ function Navbar() {
               onClick={toggleIsOpen}>
               <a
                 href={`#${page}`}
-                className="text-2xl">
+                className="text-2xl capitalize">
                 {page}
               </a>
             </li>
