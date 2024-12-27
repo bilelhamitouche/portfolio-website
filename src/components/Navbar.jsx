@@ -15,7 +15,7 @@ function Navbar() {
         className="text-2xl italic font-logo">
         BH
       </a>
-      <ul className="hidden gap-4 justify-center items-center md:flex">
+      <ul className="hidden gap-4 justify-center items-center sm:flex">
         {pages.map((page) => (
           <li>
             <Link
@@ -28,10 +28,10 @@ function Navbar() {
         ))}
       </ul>
       {isOpen ? (
-        <ul className="absolute top-0 left-0 z-10 flex-col gap-4 justify-center items-center w-full bg-gray-900 md:hidden">
+        <ul className="absolute top-0 left-0 z-10 flex-col gap-4 justify-center items-center w-full bg-gray-900 sm:hidden">
           <li className="p-8 w-full text-center">
             <button
-              className="inline self-end rounded-full transition-all md:hidden"
+              className="inline self-end rounded-full transition-all sm:hidden"
               onClick={toggleIsOpen}>
               {isOpen ? <FaTimes className="text-3xl" /> : <FaBars />}
             </button>
@@ -50,7 +50,7 @@ function Navbar() {
         </ul>
       ) : null}
       <button
-        className="inline rounded-full transition-all md:hidden"
+        className="inline rounded-full transition-all sm:hidden"
         onClick={toggleIsOpen}>
         {isOpen ? <FaTimes /> : <FaBars />}
       </button>
