@@ -1,4 +1,3 @@
-import Link from "./Link";
 import AvatarImage from "../assets/avatar.svg";
 
 function Hero() {
