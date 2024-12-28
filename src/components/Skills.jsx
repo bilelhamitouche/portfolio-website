@@ -1,7 +1,7 @@
 function Skills() {
   return (
     <section
-      className="p-4"
+      className="container px-16 mx-auto max-w-screen-lg"
       id="skills"></section>
   );
 }

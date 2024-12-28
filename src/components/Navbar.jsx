@@ -12,7 +12,7 @@ function Navbar() {
     <nav className="flex justify-between items-center p-4">
       <a
         href="#"
-        className="text-2xl italic font-logo">
+        className="text-2xl italic font-semibold font-logo">
         BH
       </a>
       <ul className="hidden gap-4 justify-center items-center sm:flex">
@@ -28,7 +28,7 @@ function Navbar() {
         ))}
       </ul>
       {isOpen ? (
-        <ul className="absolute top-0 left-0 z-10 flex-col gap-4 justify-center items-center w-full bg-gray-900 sm:hidden">
+        <ul className="absolute top-0 left-0 z-10 flex-col gap-4 justify-center items-center w-full min-h-full bg-gray-900 sm:hidden">
           <li className="p-8 w-full text-center">
             <button
               className="inline self-end rounded-full transition-all sm:hidden"
