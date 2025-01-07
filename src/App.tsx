@@ -1,11 +1,7 @@
 type Props = {};
 
 function App({}: Props) {
-  return (
-    <div className="flex justify-center items-center h-screen">
-      <button className="btn btn-primary">Click Me</button>
-    </div>
-  );
+  return <div className="p-4 text-lg">Bilel Hamitouche</div>;
 }
 
 export default App;
