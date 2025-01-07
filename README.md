@@ -2,6 +2,8 @@
 
 This is my personal portfolio website where I showcase my skills as a web developer.
 
+[Live Preview](https://bilelhamitouche.vercel.app)
+
 ## Installation
 
 To install you first need to clone this repo by typing the following into the command line:
