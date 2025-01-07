@@ -1,7 +1,13 @@
+import Navbar from "./components/Navbar";
+
 type Props = {};
 
 function App({}: Props) {
-  return <div className="p-4 text-lg">Bilel Hamitouche</div>;
+  return (
+    <div className="container mx-auto max-w-screen-xl">
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
