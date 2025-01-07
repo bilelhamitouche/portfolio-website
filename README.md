@@ -27,7 +27,7 @@ Go to http://localhost:5173 to see the website in action.
 
 ## Tech stack used
 
--ReactJS
--Typescript
--Tailwindcss
--DaisyUI
+- ReactJS
+- Typescript
+- Tailwindcss
+- DaisyUI
