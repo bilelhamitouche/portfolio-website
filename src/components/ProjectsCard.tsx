@@ -30,6 +30,7 @@ function ProjectsCard({ title, description, link, stack }: Props) {
         <div className="justify-end card-actions">
           <a
             href={link}
+            target="_blank"
             className="link link-primary">
             Live demo
           </a>
