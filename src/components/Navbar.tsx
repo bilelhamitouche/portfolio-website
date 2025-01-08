@@ -25,7 +25,7 @@ function Navbar({}: Props) {
     },
   ];
   return (
-    <div className="navbar bg-base-100">
+    <nav className="navbar bg-base-100">
       <div className="navbar-start">
         <a
           href="/"
@@ -39,7 +39,7 @@ function Navbar({}: Props) {
             <li key={index}>
               <a
                 href={link.link}
-                className="hover:bg-transparent link link-hover">
+                className="font-semibold hover:bg-transparent link link-hover">
                 {link.text}
               </a>
             </li>
@@ -49,8 +49,8 @@ function Navbar({}: Props) {
       <label className="flex gap-2 cursor-pointer navbar-end">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          width="18"
+          height="18"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -67,12 +67,12 @@ function Navbar({}: Props) {
         <input
           type="checkbox"
           value="dark"
-          className="toggle theme-controller"
+          className="toggle toggle-sm theme-controller"
         />
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
+          width="18"
+          height="18"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -82,7 +82,7 @@ function Navbar({}: Props) {
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
       </label>
-    </div>
+    </nav>
   );
 }
 
