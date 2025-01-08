@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Skills from "./components/Skills";
 
 type Props = {};
 
@@ -10,6 +11,7 @@ function App({}: Props) {
       <Navbar />
       <main className="py-28">
         <Hero />
+        <Skills />
       </main>
       <Footer />
     </div>
