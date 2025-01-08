@@ -7,7 +7,7 @@ export default {
     extend: {
       fontFamily: {
         main: ["Inter", "sans-serif"],
-        logo: ["Playfair Display", "sans-serif"],
+        logo: "Playfair Display",
       },
     },
   },
