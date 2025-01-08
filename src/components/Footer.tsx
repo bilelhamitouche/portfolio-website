@@ -1,4 +1,4 @@
-type Props = {};
+interface Props {}
 
 function Footer({}: Props) {
   return (
