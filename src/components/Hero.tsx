@@ -1,4 +1,4 @@
-type Props = {};
+interface Props {}
 
 function Hero({}: Props) {
   return (
@@ -9,7 +9,9 @@ function Hero({}: Props) {
           className="max-w-sm rounded-lg shadow-2xl"
         />
         <div>
-          <h1 className="text-5xl font-bold">Hi, I'm Bilel Hamitouche</h1>
+          <h1 className="text-5xl font-bold">
+            Hi, I'm <span className="text-primary">Bilel Hamitouche</span>
+          </h1>
           <p className="py-6 max-w-md">
             I'm a full-stack software developer passionate about crafting
             seamless digital experiences. I use a variety of frameworks and
