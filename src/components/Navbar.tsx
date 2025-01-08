@@ -1,4 +1,4 @@
-type Props = {};
+interface Props {}
 
 interface Link {
   link: string;
@@ -7,10 +7,6 @@ interface Link {
 
 function Navbar({}: Props) {
   const links: Link[] = [
-    {
-      link: "#about",
-      text: "About",
-    },
     {
       link: "#skills",
       text: "Skills",
