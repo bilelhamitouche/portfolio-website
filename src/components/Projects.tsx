@@ -33,7 +33,9 @@ function Projects({}: Props) {
     },
   ];
   return (
-    <section className="container flex flex-col gap-16 justify-center items-center mx-auto max-w-screen-lg text-center">
+    <section
+      className="container flex flex-col gap-16 justify-center items-center pb-28 mx-auto max-w-screen-lg text-center"
+      id="projects">
       <h2 className="text-3xl font-bold text-center">Projects</h2>
       <div className="flex flex-col gap-4">
         {projects.map((project, index) => (
