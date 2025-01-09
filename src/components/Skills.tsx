@@ -27,7 +27,7 @@ function Skills({}: Props) {
       className="py-28"
       id="skills">
       <h2 className="text-3xl font-bold text-center">Technical Skills</h2>
-      <div className="grid grid-cols-3 grid-rows-1 justify-items-center content-center">
+      <div className="grid grid-rows-3 justify-items-center content-center md:grid-rows-1 lg:grid-cols-3">
         {skills.map((skill, index) => (
           <SkillsCard
             key={index}
