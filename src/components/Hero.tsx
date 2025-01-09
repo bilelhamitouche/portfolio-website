@@ -3,7 +3,7 @@ interface Props {}
 function Hero({}: Props) {
   return (
     <section className="min-h-full hero">
-      <div className="flex-col w-full max-w-screen-lg lg:flex-row-reverse lg:justify-between hero-content">
+      <div className="flex-col gap-16 w-full max-w-screen-lg lg:flex-row-reverse lg:justify-between hero-content">
         <img
           src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
           className="max-w-sm rounded-lg shadow-2xl"
