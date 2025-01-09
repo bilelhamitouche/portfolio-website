@@ -18,7 +18,7 @@ function ProjectsCard({ title, description, link, stack }: Props) {
       <div className="text-left card-body">
         <h2 className="card-title text-primary">{title}</h2>
         <p className="max-w-screen-sm">{description}</p>
-        <div className="flex gap-4 items-center">
+        <div className="flex flex-wrap gap-4 items-center">
           {stack.map((item, index) => (
             <span
               className="p-3 badge badge-neutral"
