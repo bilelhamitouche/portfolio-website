@@ -17,7 +17,7 @@ function Contact({}: Props) {
   }
   return (
     <section
-      className="container flex flex-col gap-16 items-center mx-auto max-w-md"
+      className="container flex flex-col gap-16 items-center px-8 mx-auto max-w-md sm:p-0"
       id="contact">
       <h2 className="text-3xl font-bold text-center">Contact Me</h2>
       <form
