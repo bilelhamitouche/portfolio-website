@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 interface Props {}
 
 interface Link {
@@ -20,6 +22,19 @@ function Navbar({}: Props) {
       text: "Contact",
     },
   ];
+
+  const [theme, setTheme] = useState<string>(() => {
+    return localStorage.getItem("theme") || "light";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  function toggleTheme(e: React.ChangeEvent<HTMLInputElement>) {
+    setTheme(e.target.checked ? "dark" : "light");
+  }
   return (
     <nav className="navbar bg-base-100">
       <div className="navbar-start">
@@ -63,6 +78,8 @@ function Navbar({}: Props) {
         <input
           type="checkbox"
           value="dark"
+          onChange={toggleTheme}
+          checked={theme === "dark"}
           className="toggle toggle-sm theme-controller"
         />
         <svg
