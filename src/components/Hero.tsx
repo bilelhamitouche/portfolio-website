@@ -1,9 +1,6 @@
-import { GitFork } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { FiFacebook, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-
-interface Props {}
 
 interface Social {
   icon: ReactNode;
@@ -11,7 +8,7 @@ interface Social {
   text: string;
 }
 
-function Hero({}: Props) {
+function Hero() {
   const socials: Social[] = [
     {
       icon: <FiGithub />,

@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiGithub } from "react-icons/fi";
 
-interface Props {}
-
 interface Project {
   imageUrl: string;
   title: string;
@@ -14,7 +12,7 @@ interface Project {
   tags: string[];
 }
 
-function Projects({}: Props) {
+function Projects() {
   const projects: Project[] = [
     {
       imageUrl:

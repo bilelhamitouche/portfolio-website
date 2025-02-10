@@ -1,13 +1,11 @@
 import Link from "next/link";
 
-interface Props {}
-
 interface NavLink {
   text: string;
   link: string;
 }
 
-function Navbar({}: Props) {
+function Navbar() {
   const navLinks: NavLink[] = [
     {
       text: "About",
