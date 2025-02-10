@@ -34,7 +34,7 @@ function Projects({}: Props) {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <div
-            className="flex flex-col items-start w-96 border border-gray-200 dark:border-gray-800 card bg-base-100"
+            className="flex flex-col items-start w-96 border border-base-300 card bg-base-100"
             key={index}
           >
             <Image src={project.imageUrl} alt={project.title + " image"} />

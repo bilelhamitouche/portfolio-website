@@ -111,15 +111,6 @@ function Navbar({}: Props) {
                 value="light"
               />
             </li>
-            <li>
-              <input
-                type="radio"
-                name="theme-dropdown"
-                className="justify-start theme-controller btn btn-sm btn-block btn-ghost"
-                aria-label="Black"
-                value="black"
-              />
-            </li>
           </ul>
         </div>
         <Link href="" download className="btn">
