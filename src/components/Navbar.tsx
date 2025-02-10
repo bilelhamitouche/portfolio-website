@@ -25,7 +25,7 @@ function Navbar() {
     },
   ];
   return (
-    <header className="fixed z-50 shadow-sm opacity-95 bg-base-100 navbar backdrop-blur supports-[backdrop-filter]:opacity-60">
+    <header className="fixed z-50 shadow-sm bg-background/95 navbar backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="lg:hidden btn btn-ghost">
