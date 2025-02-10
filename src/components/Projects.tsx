@@ -54,7 +54,7 @@ function Projects() {
               </div>
               <Link
                 href={project.githubLink}
-                className="flex gap-2 items-center text-base font-semibold link link-hover"
+                className="flex gap-2 items-center text-base font-semibold link link-hover max-w-fit"
               >
                 <FiGithub />
                 View on Github
