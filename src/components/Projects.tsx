@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub, FiLink } from "react-icons/fi";
 
 interface Project {
   imageUrl: string;
@@ -49,16 +49,28 @@ function Projects() {
               </h2>
               <p>{project.description}</p>
               <div className="justify-start card-actions">
-                <div className="badge badge-outline">{project.tags[1]}</div>
-                <div className="badge badge-outline">{project.tags[2]}</div>
+                {project.tags.map((tag, index) => (
+                  <div className="badge badge-neutral" key={index}>
+                    {tag}
+                  </div>
+                ))}
               </div>
-              <Link
-                href={project.githubLink}
-                className="flex gap-2 items-center text-base font-semibold link link-hover max-w-fit"
-              >
-                <FiGithub />
-                View on Github
-              </Link>
+              <div className="flex flex-col gap-2 items-start">
+                <Link
+                  href={project.demoLink}
+                  className="flex gap-2 items-center text-base font-semibold link link-hover max-w-fit"
+                >
+                  <FiLink />
+                  Live Demo
+                </Link>
+                <Link
+                  href={project.githubLink}
+                  className="flex gap-2 items-center text-base font-semibold link link-hover max-w-fit"
+                >
+                  <FiGithub />
+                  View on Github
+                </Link>
+              </div>
             </div>
           </div>
         ))}
