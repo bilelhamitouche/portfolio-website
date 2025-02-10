@@ -26,14 +26,14 @@ function Projects() {
     },
   ];
   return (
-    <section id="projects" className="py-12 md:py-24 lg:py-32">
+    <section id="projects" className="py-12 px-8 md:py-24 lg:py-32">
       <h2 className="mb-12 text-3xl font-bold text-center sm:text-4xl md:text-5xl lg:text-6xl">
         Projects
       </h2>
       <div className="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <div
-            className="flex flex-col items-start w-96 border border-base-300 card bg-base-100"
+            className="flex flex-col items-start border border-base-300 card bg-base-100"
             key={index}
           >
             <Image
