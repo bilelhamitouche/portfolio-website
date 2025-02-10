@@ -39,9 +39,9 @@ function Hero() {
             Fullstack Developer
           </h1>
           <p className="py-6 text-base-content">
-            I'm Bilel Hamitouche, a passionate Fullstack Developer dedicated to
-            crafting seamless and engaging web experiences. Explore my work and
-            discover how I can help bring your ideas to life!
+            I&apos;m Bilel Hamitouche, a passionate Fullstack Developer
+            dedicated to crafting seamless and engaging web experiences. Explore
+            my work and discover how I can help bring your ideas to life!
           </p>
           <div className="flex gap-4 justify-center items-center">
             {socials.map((social, index) => (
