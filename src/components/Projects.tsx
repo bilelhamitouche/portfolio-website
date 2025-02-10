@@ -17,7 +17,8 @@ interface Project {
 function Projects({}: Props) {
   const projects: Project[] = [
     {
-      imageUrl: "",
+      imageUrl:
+        "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
       title: "Personal Portfolio",
       description: "My personal portfolio project I built with NextJS",
       demoLink: "https://bilelhamitouche.vercel.app",
@@ -31,13 +32,18 @@ function Projects({}: Props) {
       <h2 className="mb-12 text-3xl font-bold text-center sm:text-4xl md:text-5xl lg:text-6xl">
         Projects
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <div
             className="flex flex-col items-start w-96 border border-base-300 card bg-base-100"
             key={index}
           >
-            <Image src={project.imageUrl} alt={project.title + " image"} />
+            <Image
+              src={project.imageUrl}
+              alt={project.title + " image"}
+              width={400}
+              height={300}
+            />
             <div className="space-y-1 card-body">
               <h2 className="text-xl font-bold card-title">
                 {project.title}
