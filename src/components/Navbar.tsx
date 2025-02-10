@@ -59,7 +59,7 @@ function Navbar() {
           </ul>
         </div>
         <Link href="/" className="p-2 text-xl font-bold no-underline link">
-          Bilel.tech
+          Bilel.dev
         </Link>
       </div>
       <div className="hidden lg:flex navbar-center">
