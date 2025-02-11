@@ -7,7 +7,7 @@ function Contact() {
       <h2 className="text-3xl font-bold text-center sm:text-4xl md:text-5xl lg:text-6xl">
         Get In Touch
       </h2>
-      <fieldset className="p-4 space-y-4 border fieldset w-sm border-base-300 rounded-box md:w-md lg:w-lg">
+      <fieldset className="p-4 space-y-4 max-w-full border w-xs fieldset border-base-300 rounded-box md:w-md lg:w-lg">
         <div>
           <label
             htmlFor="name"
