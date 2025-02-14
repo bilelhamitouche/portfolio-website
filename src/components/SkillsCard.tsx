@@ -1,9 +1,6 @@
-interface Props {
-  title: string;
-  stack: string[];
-}
+import Skill from "@/types/skill";
 
-export default function SkillsCard({ title, stack }: Props) {
+export default function SkillsCard({ title, stack }: Skill) {
   return (
     <div className="border border-base-300 card bg-base-100">
       <div className="card-body">
