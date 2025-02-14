@@ -1,12 +1,6 @@
+import Social from "@/types/social";
 import Link from "next/link";
-import { ReactNode } from "react";
 import { FiFacebook, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-
-interface Social {
-  icon: ReactNode;
-  link: string;
-  text: string;
-}
 
 function Hero() {
   const socials: Social[] = [
