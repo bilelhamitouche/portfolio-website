@@ -1,17 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-import { FiGithub, FiLink } from "react-icons/fi";
-
-interface Project {
-  imageUrl: string;
-  title: string;
-  description: string;
-  demoLink: string;
-  githubLink: string;
-  type: "Frontend" | "Backend" | "Fullstack";
-  tags: string[];
-}
-
+import Project from "@/types/project";
+import ProjectCard from "./ProjectCard";
 function Projects() {
   const projects: Project[] = [
     {
@@ -20,7 +8,7 @@ function Projects() {
       title: "Personal Portfolio",
       description: "My personal portfolio project I built with NextJS",
       demoLink: "https://bilelhamitouche.vercel.app",
-      githubLink: "https://github.com/bilelhamitouche/personal-website",
+      githubLink: "https://github.com/bilelhamitouche/portfolio-website",
       type: "Frontend",
       tags: ["NextJS", "Typescript", "TailwindCSS", "DaisyUI"],
     },
@@ -32,47 +20,16 @@ function Projects() {
       </h2>
       <div className="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
-          <div
-            className="flex flex-col items-start border border-base-300 card bg-base-100"
+          <ProjectCard
             key={index}
-          >
-            <Image
-              src={project.imageUrl}
-              alt={project.title + " image"}
-              width={400}
-              height={300}
-            />
-            <div className="space-y-1 card-body">
-              <h2 className="text-xl font-bold card-title">
-                {project.title}
-                <div className="badge badge-secondary">{project.type}</div>
-              </h2>
-              <p>{project.description}</p>
-              <div className="justify-start card-actions">
-                {project.tags.map((tag, index) => (
-                  <div className="badge badge-neutral" key={index}>
-                    {tag}
-                  </div>
-                ))}
-              </div>
-              <div className="flex flex-col gap-2 items-start">
-                <Link
-                  href={project.demoLink}
-                  className="flex gap-2 items-center text-base font-semibold link link-hover max-w-fit"
-                >
-                  <FiLink />
-                  Live Demo
-                </Link>
-                <Link
-                  href={project.githubLink}
-                  className="flex gap-2 items-center text-base font-semibold link link-hover max-w-fit"
-                >
-                  <FiGithub />
-                  View on Github
-                </Link>
-              </div>
-            </div>
-          </div>
+            imageUrl={project.imageUrl}
+            title={project.title}
+            description={project.description}
+            demoLink={project.demoLink}
+            githubLink={project.githubLink}
+            type={project.type}
+            tags={project.tags}
+          />
         ))}
       </div>
     </section>
