@@ -1,9 +1,5 @@
+import NavLink from "@/types/navlink";
 import Link from "next/link";
-
-interface NavLink {
-  text: string;
-  link: string;
-}
 
 function Navbar() {
   const navLinks: NavLink[] = [
