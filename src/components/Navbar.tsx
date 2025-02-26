@@ -4,8 +4,8 @@ import Link from "next/link";
 function Navbar() {
   const navLinks: NavLink[] = [
     {
-      text: "About",
-      link: "#about",
+      text: "Blog",
+      link: "/blog",
     },
     {
       text: "Projects",
