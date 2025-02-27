@@ -1,19 +1,11 @@
-import { unstable_cache } from "next/cache";
+import Image from "next/image";
 import Link from "next/link";
-
-const createBlog = unstable_cache(
-  async (formData: FormData) => {
-    "use server";
-    const blogs = await db.select().from(blogTable);
-  },
-  ["posts"],
-);
 
 function BlogCard() {
   return (
     <div className="card bg-base-100 border border-base-300">
       <figure>
-        <img
+        <Image
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
           alt="Shoes"
         />
