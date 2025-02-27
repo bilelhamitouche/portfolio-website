@@ -5,7 +5,7 @@ function Navbar() {
   const navLinks: NavLink[] = [
     {
       text: "Blog",
-      link: "/blog",
+      link: "#blog",
     },
     {
       text: "Projects",
