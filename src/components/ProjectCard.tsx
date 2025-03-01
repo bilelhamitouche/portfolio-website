@@ -14,7 +14,13 @@ function ProjectCard({
 }: Project) {
   return (
     <div className="flex flex-col items-start border border-base-300 card bg-base-100">
-      <Image src={imageUrl} alt={title + " image"} width={400} height={300} />
+      <Image
+        src={imageUrl}
+        alt={title + " image"}
+        width={400}
+        height={300}
+        className="size-full"
+      />
       <div className="space-y-1 card-body">
         <h2 className="text-xl font-bold card-title">
           {title}
