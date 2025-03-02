@@ -9,7 +9,6 @@ import Blogs from "@/components/Blogs";
 export default function Home() {
   return (
     <div className="bg-background">
-      <Navbar />
       <main className="container mx-auto max-w-6xl">
         <Hero />
         <Projects />
@@ -17,7 +16,6 @@ export default function Home() {
         <Blogs />
         <Contact />
       </main>
-      <Footer />
     </div>
   );
 }
