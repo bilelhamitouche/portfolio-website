@@ -4,15 +4,13 @@ import Link from "next/link";
 function BlogCard() {
   return (
     <div className="flex flex-col gap-2 items-start card bg-base-100 border border-base-300">
-      <figure>
-        <Image
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
-          width={400}
-          height={300}
-          className="size-full"
-        />
-      </figure>
+      <Image
+        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+        alt="Shoes"
+        width={400}
+        height={300}
+        className="size-full"
+      />
       <div className="card-body space-y-1">
         <h2 className="card-title text-xl font-bold">Card Title</h2>
         <p>
