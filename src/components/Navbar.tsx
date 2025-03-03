@@ -85,7 +85,7 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="p-2 w-32 shadow-2xl dropdown-content bg-base-300 rounded-box z-1"
+            className="p-2 w-32 shadow-2xl dropdown-content bg-base-300 rounded-box z-1 space-y-2"
           >
             <li>
               <input
