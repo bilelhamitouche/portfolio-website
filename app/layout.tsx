@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
+    <html lang="en" className="h-full scroll-smooth" suppressHydrationWarning>
       <body className={`${lusitana.className} h-full antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
