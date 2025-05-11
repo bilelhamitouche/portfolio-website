@@ -1,10 +1,21 @@
+"use client";
+import { motion } from "motion/react";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section
+    <motion.section
       id="projects"
       className="container py-12 px-4 mx-auto space-y-12 sm:py-16 md:py-20"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: "tween",
+          duration: 0.4,
+        },
+      }}
     >
       <div className="space-y-4 text-center">
         <h2 className="text-3xl font-bold">Work</h2>
@@ -29,6 +40,6 @@ export default function Projects() {
           ]}
         />
       </div>
-    </section>
+    </motion.section>
   );
 }

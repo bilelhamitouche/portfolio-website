@@ -1,3 +1,4 @@
+"use client";
 import { sendEmailAction } from "@/actions/email";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -11,12 +12,22 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./ui/tooltip";
+import { motion } from "motion/react";
 
 export default function Contact() {
   return (
-    <section
+    <motion.section
       id="contact"
       className="container p-4 py-12 mx-auto space-y-8 sm:py-16 lg:py-20"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: "tween",
+          duration: 0.4,
+        },
+      }}
     >
       <div className="space-y-4 text-center">
         <h2 className="text-3xl font-bold">
@@ -67,22 +78,72 @@ export default function Contact() {
         </div>
       </div>
       <form action={sendEmailAction} className="mx-auto space-y-4 max-w-xl">
-        <div className="space-y-2">
+        <motion.div
+          className="space-y-2"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 0.2,
+              type: "tween",
+              duration: 0.4,
+            },
+          }}
+        >
           <Label className="text-md">Name</Label>
           <Input name="name" />
-        </div>
-        <div className="space-y-2">
+        </motion.div>
+        <motion.div
+          className="space-y-2"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 0.3,
+              type: "tween",
+              duration: 0.4,
+            },
+          }}
+        >
           <Label className="text-md">Email</Label>
           <Input type="email" name="email" />
-        </div>
-        <div className="space-y-2">
+        </motion.div>
+        <motion.div
+          className="space-y-2"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 0.4,
+              type: "tween",
+              duration: 0.4,
+            },
+          }}
+        >
           <Label className="text-md">Message</Label>
           <Textarea name="message"></Textarea>
-        </div>
-        <Button className="w-full text-md" size="lg">
-          Send Message
-        </Button>
+        </motion.div>
+        <motion.div
+          className="w-full"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 0.5,
+              type: "tween",
+              duration: 0.4,
+            },
+          }}
+        >
+          <Button className="w-full text-md" size="lg">
+            Send Message
+          </Button>
+        </motion.div>
       </form>
-    </section>
+    </motion.section>
   );
 }
