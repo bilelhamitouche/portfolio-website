@@ -26,7 +26,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
           title="ChatSync"
-          description="Realtime Chat Application full user authentication, messaging, and creating multiple chats."
+          description="Realtime Chat Application with full user authentication, messaging, and creating multiple chats."
           demoLink="https://chatsync-dusky.vercel.app"
           githubLink="https://github.com/bilelhamitouche/chatsync"
           imageUrl="/ChatSync.png"
@@ -36,6 +36,21 @@ export default function Projects() {
             "PostgreSQL",
             "Drizzle",
             "WebSockets",
+            "Vercel",
+          ]}
+        />
+        <ProjectCard
+          title="Jobsphere"
+          description="This job portal app is a fully functional employment platform designed to streamline the job search and hiring process."
+          demoLink="https://jobsphere-eight.vercel.app"
+          githubLink="https://github.com/bilelhamitouche/jobsphere"
+          imageUrl="/ChatSync.png"
+          stack={[
+            "Next.js",
+            "Typescript",
+            "PostgreSQL",
+            "Role based auth",
+            "Drizzle",
             "Vercel",
           ]}
         />
