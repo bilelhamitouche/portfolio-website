@@ -44,7 +44,7 @@ export default function Projects() {
           description="This job portal app is a fully functional employment platform designed to streamline the job search and hiring process."
           demoLink="https://jobsphere-eight.vercel.app"
           githubLink="https://github.com/bilelhamitouche/jobsphere"
-          imageUrl="/ChatSync.png"
+          imageUrl="/JobSphere.png"
           stack={[
             "Next.js",
             "Typescript",
