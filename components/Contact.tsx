@@ -92,7 +92,7 @@ export default function Contact() {
           }}
         >
           <Label className="text-md">Name</Label>
-          <Input name="name" />
+          <Input name="name" className="font-sans" />
         </motion.div>
         <motion.div
           className="space-y-2"
@@ -108,7 +108,7 @@ export default function Contact() {
           }}
         >
           <Label className="text-md">Email</Label>
-          <Input type="email" name="email" />
+          <Input type="email" name="email" className="font-sans" />
         </motion.div>
         <motion.div
           className="space-y-2"
@@ -124,7 +124,7 @@ export default function Contact() {
           }}
         >
           <Label className="text-md">Message</Label>
-          <Textarea name="message"></Textarea>
+          <Textarea name="message" className="font-sans"></Textarea>
         </motion.div>
         <motion.div
           className="w-full"
