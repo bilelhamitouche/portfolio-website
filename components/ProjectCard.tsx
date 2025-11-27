@@ -13,7 +13,6 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { Github, Link2 } from "lucide-react";
 import Image from "next/image";
-import { motion } from "motion/react";
 
 export default function ProjectCard({
   title,
@@ -24,7 +23,7 @@ export default function ProjectCard({
   stack,
 }: ProjectCardProps) {
   return (
-    <motion.div initial={{ y: 0 }} whileHover={{ y: -10 }}>
+    <div>
       <Card>
         <CardHeader className="space-y-2">
           <div className="overflow-hidden z-50 rounded-lg border border-gray-100 dark:border-gray-800">
@@ -61,6 +60,6 @@ export default function ProjectCard({
           </Button>
         </CardFooter>
       </Card>
-    </motion.div>
+    </div>
   );
 }
