@@ -22,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full scroll-smooth" suppressHydrationWarning>
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       <body className={`${lusitana.className} h-full antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
