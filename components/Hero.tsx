@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { motion } from "motion/react";
+import { Badge } from "./ui/badge";
 
 export default function Hero() {
   return (
@@ -17,10 +18,13 @@ export default function Hero() {
         },
       }}
     >
-      <motion.p className="font-semibold text-primary">
+      <Badge
+        variant="secondary"
+        className="py-1 px-3 text-sm font-semibold rounded-full"
+      >
         Fullstack Developer
-      </motion.p>
-      <h1 className="flex flex-col gap-2 text-4xl font-bold sm:text-5xl md:text-6xl lg:gap-4">
+      </Badge>
+      <h1 className="flex flex-col gap-2 text-4xl font-bold md:text-5xl lg:gap-4">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{
