@@ -12,7 +12,7 @@ import { ModeToggle } from "./mode-toggle";
 
 export default function Navbar() {
   return (
-    <header className="flex justify-between items-center p-4">
+    <header className="flex justify-between items-center p-4 mx-auto max-w-7xl">
       <Link href="/" className="text-xl font-semibold text-primary">
         Bilel.Hamitouche
       </Link>

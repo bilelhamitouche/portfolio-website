@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <motion.section
       id="projects"
-      className="container py-12 px-4 mx-auto space-y-12 sm:py-16 md:py-20"
+      className="container py-12 px-4 mx-auto space-y-12 max-w-7xl sm:py-16 md:py-20"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{
         opacity: 1,

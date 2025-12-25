@@ -6,7 +6,7 @@ export default function TechStack() {
   return (
     <motion.section
       id="tech-stack"
-      className="container py-12 px-4 mx-auto space-y-8 sm:py-16 lg:py-20"
+      className="container py-12 px-4 mx-auto space-y-8 max-w-7xl sm:py-16 lg:py-20"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{
         opacity: 1,
@@ -54,10 +54,7 @@ export default function TechStack() {
           title="DevOps"
           stack={["Vercel", "GitHub", "Git", "Docker"]}
         />
-        <TechStackCard
-          title="Tools"
-          stack={["Neovim", "Linux", "Bash", "Insomnia"]}
-        />
+        <TechStackCard title="Tools" stack={["Neovim", "Linux", "Bash"]} />
       </motion.div>
     </motion.section>
   );
