@@ -6,7 +6,7 @@ export default function TechStack() {
   return (
     <motion.section
       id="tech-stack"
-      className="container py-12 px-4 mx-auto space-y-8 max-w-7xl sm:py-16 lg:py-20"
+      className="container py-12 px-8 mx-auto space-y-8 max-w-7xl sm:py-16 lg:py-20"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{
         opacity: 1,

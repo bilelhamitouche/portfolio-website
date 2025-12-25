@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 export default function About() {
   return (
     <motion.section
-      className="container py-12 px-4 mx-auto space-y-12 max-w-3xl text-center sm:py-16 lg:py-20"
+      className="container py-12 px-8 mx-auto space-y-12 max-w-3xl text-center sm:py-16 lg:py-20"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{
         opacity: 1,

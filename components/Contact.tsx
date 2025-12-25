@@ -18,7 +18,7 @@ export default function Contact() {
   return (
     <motion.section
       id="contact"
-      className="container p-4 py-12 mx-auto space-y-8 sm:py-16 lg:py-20"
+      className="container py-12 px-8 mx-auto space-y-8 sm:py-16 lg:py-20"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{
         opacity: 1,

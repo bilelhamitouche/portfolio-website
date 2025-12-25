@@ -7,7 +7,7 @@ import { Badge } from "./ui/badge";
 export default function Hero() {
   return (
     <motion.section
-      className="container py-12 mx-auto space-y-4 text-center md:py-16 lg:py-20"
+      className="container py-12 px-8 mx-auto space-y-4 text-center md:py-16 lg:py-20"
       initial={{ opacity: 0, y: -50 }}
       whileInView={{
         opacity: 1,
