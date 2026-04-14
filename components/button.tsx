@@ -13,6 +13,7 @@ const variants = {
 } as const;
 
 const sizes = {
+  icon: "p-1 text-sm",
   sm: "py-1 px-2 text-sm",
   md: "py-2 px-4",
   lg: "text-lg px-6 py-3",
