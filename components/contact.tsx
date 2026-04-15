@@ -1,8 +1,58 @@
-import { LuGithub, LuLinkedin, LuTwitter } from "react-icons/lu";
+"use client";
+
+import emailjs from "@emailjs/browser";
+
+import {
+  LuCircleCheck,
+  LuCircleX,
+  LuGithub,
+  LuLinkedin,
+  LuTwitter,
+} from "react-icons/lu";
 import Button from "./button";
 import Link from "next/link";
+import { useRef } from "react";
+import toast from "react-hot-toast";
 
 export default function Contact() {
+  const formRef = useRef<HTMLFormElement>(null);
+  async function sendEmail(e: any) {
+    console.log("Hello from submit");
+    e.preventDefault();
+    if (!formRef.current) return;
+    try {
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        formRef.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+        },
+      );
+      toast.custom((t) => (
+        <div
+          className={`${t.visible ? "animate-custom-enter" : "animate-custom-leave"} bg-background text-foreground p-4 flex items-center justify-center gap-3 shadow-md rounded-lg`}
+        >
+          <LuCircleCheck size="20" className="text-success" />
+          <span className="text-base font-medium">
+            Message sent successfully
+          </span>
+        </div>
+      ));
+      formRef.current.reset();
+    } catch (err) {
+      toast.custom((t) => (
+        <div
+          className={`${t.visible ? "animate-custom-enter" : "animate-custom-leave"} bg-background text-foreground p-4 flex items-center justify-center gap-3 shadow-md rounded-lg`}
+        >
+          <LuCircleX size="20" className="text-destructive" />
+          <span className="text-base font-medium">
+            Failed to send message. Please try again later.
+          </span>
+        </div>
+      ));
+    }
+  }
   return (
     <section
       id="contact"
@@ -10,7 +60,11 @@ export default function Contact() {
     >
       <h2 className="text-xl font-medium uppercase text-primary">Contact Me</h2>
       <div className="flex flex-col gap-16 justify-between items-center w-full md:flex-row">
-        <form className="flex flex-col gap-4 p-4 w-full rounded-lg min-w-1/2 bg-card md:w-fit">
+        <form
+          ref={formRef}
+          className="flex flex-col gap-4 p-4 w-full rounded-lg min-w-1/2 bg-card md:w-fit"
+          onSubmit={sendEmail}
+        >
           <label htmlFor="name">Name</label>
           <input
             type="text"

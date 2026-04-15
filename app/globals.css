@@ -8,6 +8,8 @@
   --color-primary: #7287fd;
   --color-secondary: #dd7878;
   --color-muted: #6c6f85;
+  --color-success: #40a02b;
+  --color-error: #d20f39;
 }
 
 .dark {
@@ -18,4 +20,36 @@
   --color-primary: #b4befe;
   --color-secondary: #f2cdcd;
   --color-muted: #a6adc8;
+  --color-success: #a6e3a1;
+  --color-error: #f38ba8;
+}
+
+@keyframes toast-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toast-leave {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+}
+
+.animate-custom-enter {
+  animation: toast-enter 0.25s ease-out forwards;
+}
+
+.animate-custom-leave {
+  animation: toast-leave 0.2s ease-in forwards;
 }
