@@ -43,6 +43,7 @@ export default function ProjectCard({
         </ul>
         <div className="flex gap-3 items-center text-sm">
           <Link
+            target="_blank"
             href={githubLink}
             className="flex gap-1 items-center hover:underline underline-offset-2"
           >
@@ -50,6 +51,7 @@ export default function ProjectCard({
             <span>Github</span>
           </Link>
           <Link
+            target="_blank"
             href={demoLink}
             className="flex gap-1 items-center hover:underline underline-offset-2"
           >
