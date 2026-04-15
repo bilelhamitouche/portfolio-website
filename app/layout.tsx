@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
+import BackToTop from "@/components/back-to-top";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -26,9 +27,10 @@ export default function RootLayout({
       className={`${poppins.className} h-full antialiased dark scroll-smooth`}
     >
       <ThemeProvider>
-        <body className="flex flex-col min-h-full bg-background">
+        <body className="min-h-full bg-background">
           <Toaster position="top-center" reverseOrder={true} />
           {children}
+          <BackToTop />
         </body>
       </ThemeProvider>
     </html>
