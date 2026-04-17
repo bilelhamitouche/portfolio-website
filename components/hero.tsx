@@ -25,6 +25,7 @@ export default function Hero() {
       <Image
         src="/avatar.png"
         alt="my image"
+        loading="eager"
         width="300"
         height="300"
         className="rounded-full border-2 border-primary"
