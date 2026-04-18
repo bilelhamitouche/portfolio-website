@@ -1,13 +1,17 @@
 "use client";
 
-import { useTheme } from "@/context/theme-context";
 import { LuMoon, LuSun } from "react-icons/lu";
 import Button from "./button";
+import { useTheme } from "next-themes";
 
 export default function ThemeToggle() {
-  const { theme, toggle } = useTheme();
+  const { theme, setTheme } = useTheme();
   return (
-    <Button variant="ghost" size="icon" onClick={toggle}>
+    <Button
+      variant="ghost"
+      size="icon"
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+    >
       {theme === "dark" ? <LuMoon size="20" /> : <LuSun size="20" />}
     </Button>
   );

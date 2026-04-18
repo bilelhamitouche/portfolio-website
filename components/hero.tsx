@@ -1,7 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Button from "./button";
+import { useTheme } from "next-themes";
 
 export default function Hero() {
+  const { theme } = useTheme();
   return (
     <section
       id="home"
@@ -23,7 +27,7 @@ export default function Hero() {
         </div>
       </div>
       <Image
-        src="/avatar.png"
+        src={theme === "dark" ? "/avatar-dark.png" : "/avatar-light.png"}
         alt="my image"
         loading="eager"
         width="300"
