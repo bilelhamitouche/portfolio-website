@@ -24,13 +24,13 @@ export default function ProjectCard({
   demoLink,
 }: ProjectCardProps) {
   return (
-    <article className="flex flex-col gap-2 items-start rounded-lg border-2 border-border bg-card">
+    <article className="flex overflow-hidden flex-col gap-2 items-start rounded-lg border-2 transition-transform duration-300 hover:-translate-y-2 border-border bg-card">
       <Image
         src={image}
         alt={`${title} image`}
         width={700}
         height={600}
-        className="w-full rounded-t-lg"
+        className="w-full rounded-t-lg transition-transform hover:scale-102"
       />
       <div className="flex flex-col gap-3 items-start p-4 w-full h-full">
         <p className="text-sm font-medium uppercase text-primary">{type}</p>
