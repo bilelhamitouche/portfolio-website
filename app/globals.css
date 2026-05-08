@@ -53,3 +53,48 @@
 .animate-custom-leave {
   animation: toast-leave 0.2s ease-in forwards;
 }
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-fade-left {
+  animation: fade-in-left 0.6s ease-out forwards;
+}
+
+.animate-fade-right {
+  animation: fade-in-right 0.6s ease-out forwards;
+}
